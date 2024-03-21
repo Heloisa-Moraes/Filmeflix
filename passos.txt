@@ -1,0 +1,13 @@
+Configuração do Git local
+
+git config --global user.name Heloisa-Moraes
+git config --global user.email helomoraes2009@hotmail.com 
+
+Criar projeto MVC
+dotnet new mvc -o Pokedex
+
+Executar o projeto 
+dotnet watch run 
+
+Restaurar o projeto 
+

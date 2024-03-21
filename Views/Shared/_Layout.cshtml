@@ -1,1 +1,300 @@
-﻿
+﻿<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filmeflix</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/favicons/favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="collapse bg-danger" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Sobre</h4>
+                        <p class="text-white">
+                            Projeto desenvolvido para demonstrar a criação de páginas WEB com Net 6.0.
+                            Demonstrar a criação de aplicações com padrão MVC e leitura de arquivos JSON,
+                            além de boas práticas de Programação Orientada a Objetos, Páginas Dinâmicas e Uso de Sessão.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contatos</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="#" class="text-white">E-mail</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-danger shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="img/icons/icon.png" alt="Filmeflix" class="me-2" />
+                    &nbsp;<strong>POKÉDEX</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="pt-5 pb-3 text-center container">
+            <div class="row">
+                <div class="col mx-auto">
+                    <h1>Filmeflix</h1>
+                    <div class="group">
+                        <button id="btn-all" class="btn btn-md my-2 text-white bg-secondary btn-filter">Ver
+                            Todos os gêneros</button>
+                        <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
+                            style="background-color:#aab">Fantasia</button>
+                        <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
+                            style="background-color:#39f">Fantasia/Aventura</button>
+                        <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
+                            style="background-color:#76e">Ação/Aventura</button>
+                        <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
+                            style="background-color:#fc3">Ficção Científica/Aventura</button>
+                        <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
+                            style="background-color:#e9e">Comédia/Ação</button>
+                        <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
+                            style="background-color:#66b">Animação/Comédia</button>
+                        <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
+                            style="background-color:#f42">Ação/Drama</button>
+                        <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
+                            style="background-color:#6cf">Aventura/Drama</button>
+                        <button id="btn-aço" class="btn btn-sm my-2 text-white btn-filter"
+                            style="background-color:#ab6">Animação/Ação</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+                    <!-- Filmes - Inicio -->
+                    <div class="col">
+                        <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(1)">
+                            <img src="img/filmes/1.png" class="card-img-top" width="100%" height="300"
+                                alt="Harry Potter e a pedra filosofal " />
+                            <div class="card-body">
+                                <p class="card-text mb-0">Nº 1</p>
+                                <h3 class="card-title">Harry Potter e a pedra filosofal </h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn my-2 text-white" style="background-color:#7c5"> Fantasia</a>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Pokemon - Fim -->
+
+                    <!-- Card Pokemon - Inicio -->
+                    <div class="col">
+    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(2)">
+        <img src="img/pokemons/002.png" class="card-img-top" width="100%" height="300"
+            alt="Harry Potter e a Câmara Secreta" />
+        <div class="card-body">
+            <p class="card-text mb-0">Nº 2</p>
+            <h3 class="card-title">Harry Potter e a Câmara Secreta</h3>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5"> Fantasia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(3)">
+        <img src="img/pokemons/003.png" class="card-img-top" width="100%" height="300"
+            alt="Harry Potter e o Prisioneiro de Azkaban" />
+        <div class="card-body">
+            <p class="card-text mb-0">Nº 3</p>
+            <h3 class="card-title">Harry Potter e o Prisioneiro de Azkaban</h3>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5"> Fantasia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  outros filmes -->
+<div class="col">
+    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(4)">
+        <img src="img/pokemons/004.png" class="card-img-top" width="100%" height="300"
+            alt="Harry Potter e o Cálice de Fogo" />
+        <div class="card-body">
+            <p class="card-text mb-0">Nº 4</p>
+            <h3 class="card-title">Harry Potter e o Cálice de Fogo</h3>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5"> Fantasia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(5)">
+        <img src="img/pokemons/005.png" class="card-img-top" width="100%" height="300"
+            alt="Harry Potter e a Ordem da Fênix" />
+        <div class="card-body">
+            <p class="card-text mb-0">Nº 5</p>
+            <h3 class="card-title">Harry Potter e a Ordem da Fênix</h3>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5"> Fantasia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(6)">
+        <img src="img/pokemons/006.png" class="card-img-top" width="100%" height="300"
+            alt="Harry Potter e o Enigma do Príncipe" />
+        <div class="card-body">
+            <p class="card-text mb-0">Nº 6</p>
+            <h3 class="card-title">Harry Potter e o Enigma do Príncipe</h3>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5"> Fantasia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(7)">
+        <img src="img/pokemons/007.png" class="card-img-top" width="100%" height="300"
+            alt="Harry Potter e as Relíquias da Morte: Parte 1" />
+        <div class="card-body">
+            <p class="card-text mb-0">Nº 7</p>
+            <h3 class="card-title">Harry Potter e as Relíquias da Morte: Parte 1</h3>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5"> Fantasia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(8)">
+        <img src="img/pokemons/008.png" class="card-img-top" width="100%" height="300"
+            alt="Harry Potter e as Relíquias da Morte: Parte 2" />
+        <div class="card-body">
+            <p class="card-text mb-0">Nº 8</p>
+            <h3 class="card-title">Harry Potter e as Relíquias da Morte: Parte 2</h3>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5"> Fantasia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(9)">
+        <img src="img/pokemons/009.png" class="card-img-top" width="100%" height="300"
+            alt="O Senhor dos Anéis: As Duas Torres" />
+        <div class="card-body">
+            <p class="card-text mb-0">Nº 9</p>
+            <h3 class="card-title">O Senhor dos Anéis: As Duas Torres</h3>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5"> Fantasia/Aventura</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(10)">
+        <img src="img/pokemons/010.png" class="card-img-top" width="100%" height="300"
+            alt="O Senhor dos Anéis: O Retorno do Rei" />
+        <div class="card-body">
+            <p class="card-text mb-0">Nº 10</p>
+            <h3 class="card-title">O Senhor dos Anéis: O Retorno do Rei</h3>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5"> Fantasia/Aventura</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card shadow-sm cursor-pointer planta venenoso" onclick="GetInfo(11)">
+        <img src="img/pokemons/011.png" class="card-img-top" width="100%" height="300"
+            alt="Indiana Jones e os Caçadores da Arca Perdida" />
+        <div class="card-body">
+            <p class="card-text mb-0">Nº 11</p>
+            <h3 class="card-title">Indiana Jones e os Caçadores da Arca Perdida</h3>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn my-2 text-white" style
+
+
+
+
+    </main>
+
+    <footer class="text-muted py-3 ">
+        <div class="container">
+            <p class="float-end">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-arrow-up-circle-fill text-danger" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                    </svg>
+                </a>
+            </p>
+            <p class="mb-1">Pokeflix</p>
+            <p class="mb-0">Projeto </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script> -->
+</body>
+
+</html>
