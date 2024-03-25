@@ -1,4 +1,4 @@
-namespace Filmeflix.Models;
+namespace FilmeFlix.Models;
 
 public class ErrorViewModel
 {

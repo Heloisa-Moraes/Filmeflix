@@ -1,8 +1,9 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Filmeflix.Models;
+using FilmeFlix.Models;
+using System.Text.Json;
 
-namespace Filmeflix.Controllers;
+namespace FilmeFlix.Controllers;
 
 public class HomeController : Controller
 {
@@ -15,7 +16,13 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        List<Filme> filmes = [];
+        using (StreamReader leitor = new("Data\\filmes.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            filmes = JsonSerializer.Deserialize<List<Filme>>(dados);
+        }
+        return View(filmes);
     }
 
     public IActionResult Privacy()
