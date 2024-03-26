@@ -8,5 +8,6 @@ public class Filme
     public string Descricao { get; set; }
     public int Duracao { get; set; }
     public string ClassificacaoIndicativa { get; set; }
-    public List<string> Generos { get; set; }
+    public List<string> Genero { get; set; }
+    public string Imagem { get; set; }
 }

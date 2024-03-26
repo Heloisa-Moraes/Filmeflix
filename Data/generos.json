@@ -1,0 +1,31 @@
+[
+    {
+      "Nome": "Fantasia",
+      "Cor": "#aab"
+    },
+    {
+      "Nome": "Ação",
+      "Cor": "#76e"
+    },
+    {
+      "Nome": "Ficção Científica",
+      "Cor": "#fc3"
+    },
+    {
+        "Nome": "Comédia",
+        "Cor": "#e9e"
+      },
+      {
+        "Nome": "Animação",
+        "Cor": "#66b"
+      },
+      {
+        "Nome": "Drama",
+        "Cor": "#f42"
+      },
+      {
+        "Nome": "Aventura",
+        "Cor": "#6cf"
+      }
+      
+  ]
