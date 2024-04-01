@@ -4,8 +4,8 @@
         "Nome": "Harry Potter e a pedra filosofal ",
         "Descricao": "Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursleys. Ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa escola especializada em formar jovens bruxos.",
         "Genero": ["Fantasia"],
-        "Duração(min)": 195,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 195,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\1.png"
     },
     {
@@ -13,8 +13,8 @@
         "Nome": "Harry Potter e a Câmara Secreta",
         "Descricao": "Após passar um entediante verão na casa dos tios, Harry Potter retorna a Hogwarts para seu segundo ano letivo. Porém, estranhos acontecimentos começam a ocorrer, sugerindo que algo sinistro está escondido nas profundezas da escola.",
         "Genero": ["Fantasia"],
-        "Duração(min)": 161,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 161,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\2.png"
     },
     {
@@ -22,8 +22,8 @@
         "Nome": "Harry Potter e o Prisioneiro de Azkaban",
         "Descricao": "Harry Potter retorna a Hogwarts para seu terceiro ano escolar, mas desta vez há um perigo ainda maior à solta: Sirius Black, um assassino que escapou da prisão de Azkaban e está em busca de Harry.",
         "Genero": ["Fantasia"],
-        "Duração(min)": 142,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 142,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\3.png"
     },
     {
@@ -31,8 +31,8 @@
         "Nome": "Harry Potter e o Cálice de Fogo",
         "Descricao": "Harry Potter é selecionado para participar do Torneio Tribruxo, uma competição entre três escolas de magia. À medida que o torneio avança, Harry descobre que há forças sombrias em jogo, e ele precisa enfrentar desafios cada vez mais perigosos.",
         "Genero": ["Fantasia"],
-        "Duração(min)": 157,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 157,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\4.png"
     },
     {
@@ -40,8 +40,8 @@
         "Nome": "Harry Potter e a Ordem da Fênix",
         "Descricao": "Após testemunhar o retorno de Lord Voldemort, Harry Potter se une a um grupo secreto de alunos de Hogwarts para enfrentar a crescente ameaça das forças das trevas, enquanto o Ministério da Magia se recusa a aceitar a verdade.",
         "Genero": ["Fantasia"],
-        "Duração(min)": 138,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 138,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\5.png"
     },
     {
@@ -49,8 +49,8 @@
         "Nome": "Harry Potter e o Enigma do Príncipe",
         "Descricao": "Harry Potter retorna a Hogwarts para seu sexto ano, e o mundo bruxo está em crescente perigo com a ascensão de Voldemort. Enquanto isso, Dumbledore e Harry investigam o passado de Voldemort para descobrir uma maneira de derrotá-lo.",
         "Genero": ["Fantasia"],
-        "Duração(min)": 153,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 153,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\6.png"
     },
     {
@@ -58,8 +58,8 @@
         "Nome": "Harry Potter e as Relíquias da Morte: Parte 1",
         "Descricao": "Com a ameaça de Voldemort se tornando mais real do que nunca, Harry, Ron e Hermione decidem sair em uma jornada perigosa para encontrar e destruir as Horcruxes, pedaços da alma do bruxo das trevas, enquanto o mundo bruxo está mergulhado na guerra.",
         "Genero": ["Fantasia"],
-        "Duração(min)": 146,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 146,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\7.png"
     },
     {
@@ -67,8 +67,8 @@
         "Nome": "Harry Potter e as Relíquias da Morte: Parte 2",
         "Descricao": "A batalha final entre Harry Potter e Lord Voldemort se aproxima, e o destino do mundo bruxo está nas mãos do jovem bruxo. Enquanto Hogwarts se prepara para o confronto épico, segredos serão revelados e sacrifícios serão feitos.",
         "Genero": ["Fantasia"],
-        "Duração(min)": 130,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 130,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\8.png"
     },
     {
@@ -76,8 +76,8 @@
         "Nome": "O Senhor dos Anéis: As Duas Torres",
         "Descricao": "A saga continua enquanto a Sociedade do Anel se separa e cada grupo segue seu próprio caminho. Enquanto Frodo e Sam continuam sua jornada para destruir o Um Anel, Aragorn, Legolas e Gimli se unem aos Rohirrim para defender Rohan contra as forças do mal de Saruman.",
         "Genero": ["Fantasia","Aventura"],
-        "Duração(min)": 179,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 179,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\9.png"
     },
     {
@@ -85,8 +85,8 @@
         "Nome": "O Senhor dos Anéis: O Retorno do Rei",
         "Descricao": "A batalha final pela Terra Média está prestes a começar. Enquanto as forças do bem e do mal se reúnem para uma guerra épica, Frodo e Sam se aproximam de Mordor para destruir o Um Anel e derrotar Sauron de uma vez por todas.",
         "Genero": ["Fantasia","Aventura"],
-        "Duração(min)": 201,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 201,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\10.png"
     },
     {
@@ -94,26 +94,26 @@
         "Nome": "Indiana Jones e os Caçadores da Arca Perdida",
         "Descricao": "O famoso arqueólogo Indiana Jones é enviado em uma missão perigosa para encontrar a lendária Arca da Aliança antes que os nazistas a utilizem para conquistar o mundo. A jornada o leva a enfrentar armadilhas mortais e traições inesperadas.",
         "Genero": ["Ação","Aventura"],
-        "Duração(min)": 115,
-        "Classificação indicativa": "12 anos",
+        "Duracao": 115,
+        "Classificacao": "12 anos",
         "Imagem": "\\img\\filmes\\11.png"
     },
     {
         "Id": 12,
         "Nome": "De Volta para o Futuro",
         "Descricao": "Um jovem chamado Marty McFly acidentalmente viaja no tempo para os anos 1950 na máquina do tempo inventada por seu amigo cientista, o Dr. Emmett Brown. Ele precisa encontrar uma maneira de voltar para casa e evitar mudanças que possam afetar seu futuro.",
-        "Genero": ["Ficção Científica","Aventura"],
-        "Duração(min)": 116,
-        "Classificação indicativa": "LIVRE",
+        "Genero": ["Ficção-Científica","Aventura"],
+        "Duracao": 116,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\12.png"
     },
     {
         "Id": 13,
         "Nome": "E.T.: O Extraterrestre",
         "Descricao": "Um jovem garoto chamado Elliot faz amizade com um extraterrestre amigável que foi deixado para trás na Terra. Ele e seus amigos precisam proteger o E.T. dos adultos enquanto tentam encontrar uma maneira de ajudá-lo a voltar para casa.",
-        "Genero": ["Ficção Científica","Aventura"],
-        "Duração(min)": 115,
-        "Classificação indicativa": "LIVRE",
+        "Genero": ["Ficção-Científica","Aventura"],
+        "Duracao": 115,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\13.png"
     },
     {
@@ -121,17 +121,17 @@
         "Nome": "Pantera Negra",
         "Descricao": "T'Challa retorna à nação africana de Wakanda para assumir o trono depois da morte de seu pai. No entanto, ele logo é desafiado por um antigo inimigo que coloca em risco não apenas o destino de Wakanda, mas o mundo inteiro.",
         "Genero": ["Ação","Aventura"],
-        "Duração(min)": 134,
-        "Classificação indicativa": "12 anos",
+        "Duracao": 134,
+        "Classificacao": "12 anos",
         "Imagem": "\\img\\filmes\\14.png"
     },
     {
         "Id": 15,
         "Nome": "Homem de Ferro",
         "Descricao": "O bilionário Tony Stark, também conhecido como Homem de Ferro, constrói um traje de alta tecnologia para escapar do cativeiro e se torna um super-herói para combater o mal. No entanto, ele logo descobre que seus inimigos estão mais próximos do que ele imagina.",
-        "Genero": ["Ação","Ficção Científica"],
-        "Duração(min)": 126,
-        "Classificação indicativa": "12 anos",
+        "Genero": ["Ação","Ficção-Científica"],
+        "Duracao": 126,
+        "Classificacao": "12 anos",
         "Imagem": "\\img\\filmes\\15.png"
     },
     {
@@ -139,8 +139,8 @@
         "Nome": "Os Caça-Fantasmas",
         "Descricao": "Um grupo de cientistas desajustados cria uma empresa para caçar e capturar fantasmas em Nova York. Quando uma antiga deidade maligna ameaça destruir a cidade, eles se tornam a última esperança da humanidade contra o sobrenatural.",
         "Genero": ["Comédia","Ação"],
-        "Duração(min)": 105,
-        "Classificação indicativa": "12 anos",
+        "Duracao": 105,
+        "Classificacao": "12 anos",
         "Imagem": "\\img\\filmes\\16.png"
     },
     {
@@ -148,8 +148,8 @@
         "Nome": "Toy Story",
         "Descricao": "Um grupo de brinquedos ganha vida quando seus donos não estão por perto. Woody, o brinquedo favorito do menino Andy, se vê ameaçado pelo novo brinquedo de Andy, Buzz Lightyear, e os dois acabam se aventurando juntos para voltar para casa após se perderem.",
         "Genero": ["Animação","Comédia"],
-        "Duração(min)": 81,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 81,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\17.png"
     },
     {
@@ -157,8 +157,8 @@
         "Nome": "Batman: O Cavaleiro das Trevas",
         "Descricao": "O vigilante mascarado Batman enfrenta seu maior desafio quando um criminoso psicótico conhecido como Coringa aterroriza Gotham City. Com a ajuda do promotor Harvey Dent e do Comissário Gordon, Batman deve confrontar o caos causado pelo Coringa e enfrentar suas próprias dúvidas morais.",
         "Genero": ["Ação","Drama"],
-        "Duração(min)": 152,
-        "Classificação indicativa": "14 anos",
+        "Duracao": 152,
+        "Classificacao": "14 anos",
         "Imagem": "\\img\\filmes\\18.png"
     },
     {
@@ -166,17 +166,17 @@
         "Nome": "O Rei Leão (2019)",
         "Descricao": "Uma versão live-action do clássico da Disney, que conta a história do jovem leão Simba, destinado a ser o próximo rei da Pedra do Reino. No entanto, seu tio malvado, Scar, tem outros planos, e Simba deve lutar para retomar seu lugar de direito como rei.",
         "Genero": ["Aventura","Drama"],
-        "Duração(min)": 118,
-        "Classificação indicativa": "LIVRE",
+        "Duracao": 118,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\19.png"
     },
     {
         "Id": 20,
         "Nome": "Os Incríveis",
         "Descricao": "Uma família de super-heróis aposentados é forçada a voltar à ação para salvar o mundo quando um vilão diabólico ameaça destruir tudo o que eles amam. Com poderes individuais e problemas familiares, eles devem aprender a trabalhar juntos novamente para derrotar o mal.",
-        "Gênero": ["Animação","Ação"],
-        "Duração(min)": 115,
-        "Classificação indicativa": "LIVRE",
+        "Genero": ["Animação","Ação"],
+        "Duracao": 115,
+        "Classificacao": "LIVRE",
         "Imagem": "\\img\\filmes\\20.png"
     }
 ]

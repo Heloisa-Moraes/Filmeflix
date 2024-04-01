@@ -1,6 +1,15 @@
 ﻿@model List<Filme>
 @{
     ViewData["Title"] = "Home";
+    var generos = (List<Genero>)ViewData["Generos"];
+    string Cor(string nome)
+    {
+        return generos
+        .Where(t => t.Nome == nome)
+        .Select(t => t.Cor)
+        .FirstOrDefault();
+    }
+
 }
 
 
@@ -10,21 +19,13 @@
             <h1>FilmeFlix</h1>
             <div class="group">
                 <button id="btn-all" class="btn btn-md my-2 text-white bg-secondary btn-filter">
-                    Ver Todos os filmes</button>
-                <button class="btn btn-sm my-2 text-white btn-filter"
-                        style="background-color:#aab">Fantasia</button>
-                <button class="btn btn-sm my-2 text-white btn-filter"
-                        style="background-color:#76e">Ação</button>
-                <button class="btn btn-sm my-2 text-white btn-filter"
-                        style="background-color:#fc3">Ficção Científica</button>
-                <button class="btn btn-sm my-2 text-white btn-filter"
-                        style="background-color:#e9e">Comédia</button>
-                <button class="btn btn-sm my-2 text-white btn-filter"
-                        style="background-color:#66b">Animação</button>
-                <button class="btn btn-sm my-2 text-white btn-filter"
-                        style="background-color:#f42">Drama</button>
-                <button class="btn btn-sm my-2 text-white btn-filter"
-                        style="background-color:#6cf">Aventura</button>
+                    Ver Todos
+                </button>
+                @foreach (var genero in generos)
+                {
+                    <button class="btn btn-sm my-2 text-white btn-filter"
+                        style="background-color:@genero.Cor">@genero.Nome</button>
+                }
 
             </div>
         </div>
@@ -38,24 +39,24 @@
 
             @foreach (var filmes in Model)
             {
-              
-                <div class="col">
-                    <div class="card shadow-sm cursor-pointer " >
+                <div class="col" onclick="window.location = '/Home/Details/@filmes.Id'">
+                    <div class="card shadow-sm cursor-pointer @string.Join(' ', filmes.Genero)">
                         <img src="@filmes.Imagem" class="card-img-top" width="75%" height="300"
                             alt="O Senhor dos Anéis: O Retorno do Rei" />
                         <div class="card-body">
                             <p class="card-text mb-0">Nº @filmes.Id</p>
-                            <h3 class="card-title">@filmes.Nome</h3>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="#" class="btn my-2 text-white" style="background-color:#7c5">@filmes.Genero</a>
-                                </div>
+                            <h5 class="card-title">@filmes.Nome</h5>
+                            <div class="btn-group">
+                                @foreach (var genero in filmes.Genero)
+                                {
+                                    <a href="#" class="btn my-2 text-white" style="background-color:@Cor(genero)">@genero</a>
+                                }
                             </div>
                         </div>
                     </div>
                 </div>
-            }    
-            
+            }
+
             <div id="zeroPokemon" class="col-lg-12 text-center" hidden>
                 <h1 class="my-3 text-danger">Nenhum Filme Encontrado</h1>
             </div>

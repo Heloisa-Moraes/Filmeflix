@@ -22,7 +22,35 @@ public class HomeController : Controller
             string dados = leitor.ReadToEnd();
             filmes = JsonSerializer.Deserialize<List<Filme>>(dados);
         }
+
+        List<Genero> generos = [];             //modificamos aqui 01/04 //
+        using (StreamReader leitor = new("Data\\generos.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            generos = JsonSerializer.Deserialize<List<Genero>>(dados);
+        }      
+         ViewData["Generos"] = generos;                                   // até aq 01/04//
         return View(filmes);
+    }
+    public IActionResult Details(int id)
+    {
+        List<Filme> filmes = [];
+        using (StreamReader leitor = new("Data\\filmes.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            filmes = JsonSerializer.Deserialize<List<Filme>>(dados);
+        }
+        List<Genero> generos = [];
+        using (StreamReader leitor = new("Data\\generos.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            generos = JsonSerializer.Deserialize<List<Genero>>(dados);
+        }
+        ViewData["Generos"] = generos;
+        var filme = filmes
+            .Where(p => p.Id == id)
+            .FirstOrDefault();
+        return View(filme);
     }
 
     public IActionResult Privacy()
