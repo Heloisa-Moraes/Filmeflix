@@ -16,43 +16,40 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        List<Filme> filmes = [];
-        using (StreamReader leitor = new("Data\\filmes.json"))
-        {
-            string dados = leitor.ReadToEnd();
-            filmes = JsonSerializer.Deserialize<List<Filme>>(dados);
-        }
-
-        List<Genero> generos = [];             //modificamos aqui 01/04 //
-        using (StreamReader leitor = new("Data\\generos.json"))
-        {
-            string dados = leitor.ReadToEnd();
-            generos = JsonSerializer.Deserialize<List<Genero>>(dados);
-        }      
-         ViewData["Generos"] = generos;                                   // até aq 01/04//
+        List<Filme> filmes = GetFilmes();
+        List<Genero> generos = GetGeneros();
+        ViewData["Generos"] = generos;                                   // até aq 01/04//
         return View(filmes);
     }
     public IActionResult Details(int id)
     {
-        List<Filme> filmes = [];
+        List<Filme> filmes = GetFilmes();
+        List<Genero> generos = GetGeneros();
+        DetailsVM details = new() {
+            Generos = generos,
+            Atual = filmes.FirstOrDefault(p => p.Id == id),
+            Anterior = filmes.OrderByDescending(p => p.Id).FirstOrDefault(p => p.Id < id),
+            Proximo = filmes.OrderBy( p=> p.Id).FirstOrDefault(p => p.Id > id),
+        };
+        return View(details);
+    }
+    private List<Filme> GetFilmes()
+    {
         using (StreamReader leitor = new("Data\\filmes.json"))
         {
             string dados = leitor.ReadToEnd();
-            filmes = JsonSerializer.Deserialize<List<Filme>>(dados);
+            return JsonSerializer.Deserialize<List<Filme>>(dados);
         }
-        List<Genero> generos = [];
+    }
+
+    private List<Genero> GetGeneros()
+    {
         using (StreamReader leitor = new("Data\\generos.json"))
         {
             string dados = leitor.ReadToEnd();
-            generos = JsonSerializer.Deserialize<List<Genero>>(dados);
+            return JsonSerializer.Deserialize<List<Genero>>(dados);
         }
-        ViewData["Generos"] = generos;
-        var filme = filmes
-            .Where(p => p.Id == id)
-            .FirstOrDefault();
-        return View(filme);
     }
-
     public IActionResult Privacy()
     {
         return View();
